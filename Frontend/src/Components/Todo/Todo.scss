@@ -1,0 +1,32 @@
+.todo-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    height:100vh;
+    gap:2vh;
+
+    h1{
+        font-weight:bold;
+        font-size:2.5rem;
+        color:#262f38;
+        margin-left: 100px;
+        margin-right: 100px;
+        
+    }
+
+    .btn{
+        background-color:#404f5e;
+    }
+  
+
+    
+}
+
+@media screen and (max-width:500px){
+    .todo-container{
+        h1{
+            font-size:1.3rem;
+        }
+    }
+}

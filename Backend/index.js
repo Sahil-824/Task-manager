@@ -11,7 +11,7 @@ require('dotenv').config();
 const server = http.createServer(app); // Create HTTP server for Socket.IO
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173", // Frontend origin
+    origin: "https://task-manager-frontend-6tvw.onrender.com", // Frontend origin
     methods: ["GET", "POST"],
     credentials: true
   }
@@ -21,7 +21,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173"
+    origin: "https://task-manager-frontend-6tvw.onrender.com/"
   })
 );
 

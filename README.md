@@ -48,5 +48,5 @@ npm start
 
 
 ![Description of the image](images/ss1.png)
-![Description of the image](images/ss22.png)
+![Description of the image](images/ss2.png)
 

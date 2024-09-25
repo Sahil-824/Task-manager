@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 
-const socket = io.connect('http://localhost:4000'); // Adjust if your server URL is different
+const socket = io.connect('https://task-manager-backend-cuia.onrender.com'); // Adjust if your server URL is different
 
 const TaskList = () => {
   const [tasks, setTasks] = useState([]);
@@ -9,7 +9,7 @@ const TaskList = () => {
   useEffect(() => {
     // Fetch initial tasks from the server
     const fetchTasks = async () => {
-      const response = await fetch('http://localhost:4000/todo');
+      const response = await fetch('https://task-manager-backend-cuia.onrender.com');
       const data = await response.json();
       setTasks(data);
     };

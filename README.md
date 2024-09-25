@@ -35,6 +35,10 @@ A simple task management application built using the MEAN stack (MongoDB, Expres
 - **State Management:** Redux
 - **Styling:** SCSS/CSS
 
+Clone the repository:
+   git clone https://github.com/Sahil-824/Task-manager.git
+   cd Task-manager
+
 ## run backend
 
 cd ./Backend

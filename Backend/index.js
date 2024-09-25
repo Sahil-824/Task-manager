@@ -6,6 +6,7 @@ const cors = require('cors');
 const authRouter = require("./routes/authRouter");
 const todoRouter = require("./routes/todoRouter");
 const socketIo = require('socket.io'); // Import Socket.IO
+const PORT=4002;
 require('dotenv').config();
 
 const server = http.createServer(app); // Create HTTP server for Socket.IO
@@ -31,7 +32,7 @@ app.use("/todo", todoRouter);
 
 // Connect to MongoDB and start the server
 connectDB().then(() => {
-  server.listen(4000, () => console.log("Server is listening on port 4000"));
+  server.listen(PORT, () => console.log("Server is listening on port 4000"));
 });
 
 // Handle Socket.IO connection
